@@ -1,0 +1,91 @@
+header {
+    position: fixed; /* This will keep the header at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* This will make the header span the full width of the page */
+    height: 60px; /* You can adjust this to your desired height */
+    color: #fff; /* This will make the text in the header white */
+    display: flex; /* This will center the text horizontally and vertically */
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100; /* This will make the header appear above all other elements on the page */
+    background-color:transparent;
+    padding: 1rem 2rem;  /* This will add some space around the text */
+    transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* This will add a subtle shadow to the bottom of the header */
+  }
+  
+.links{
+     display: flex;
+     flex-direction: row;
+     justify-content:center ; 
+     gap:10;
+}
+
+.links li{
+    margin: 5px 10px;
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+.links li:hover{
+    background-color:  #ff6347;
+}
+
+.links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+.links li a:hover{
+    color: aliceblue;
+}
+
+.links.scrolled li a:hover{
+    color: aliceblue;
+}
+
+.links li a.black{
+    color: black;
+}
+.logo-first{
+    font-size: 2rem;
+    color: #2196f3;
+    font-weight: 800;
+}
+.logo-second{
+    font-size: 2rem;
+    color: #0d47a1;
+    font-weight: 600;
+}
+.menu{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/*****media queries*********/
+
+/**SMALL DEVICES***/
+@media screen and (max-width: 585px) { 
+    header .button{
+      visibility: hidden;
+    }
+    .links li a{
+     visibility: hidden;
+    }
+    .logo-first{
+        font-size: 2rem;
+    }
+    .logo-second{
+        font-size: 1.5rem;
+    }
+  }
