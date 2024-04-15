@@ -1,7 +1,7 @@
 .hero_section{
     width: 100%;
     height: 90vh;
-   background-image: url('../public/bg2.jpg'); /* This is the background image for the hero section */
+   background-image: url('../public/bg1.jpg'); /* This is the background image for the hero section */
     background-size: cover; /* This will make the background image cover the entire section */
     background-position: center; /* This will center the background image */
     display: flex; /* This will center the text horizontally and vertically */
@@ -54,10 +54,21 @@
     border-radius: 8px;
     background-color:yellowgreen;
     position: fixed;
+    justify-content: center;
+    text-align: center;
     margin-left: 90%;
     margin-bottom: -40%;
     z-index: 1000;
     transition: 500ms ease;
+    padding-top: .3rem;
+}
+.down_icon{
+    color: #fff;
+    font-size: 2rem;
+    transition: 500ms ease;
+}
+.down_icon:hover{
+    color: #000;
 }
 .down_arrow:hover{
     border: 1px solid;

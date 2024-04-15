@@ -1,7 +1,7 @@
 "use client";
 
 import React,{useState, useEffect} from 'react';
-import { BiMenu } from 'react-icons/bi';
+import {BiMenu} from 'react-icons/bi'
 import styles from '@/styles/header.css'
 
 const Links = () => {
@@ -16,9 +16,9 @@ const Links = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 760);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 770);
     useEffect(() => {
-      const handleResize = () => setIsMobile(window.innerWidth < 760);
+      const handleResize = () => setIsMobile(window.innerWidth < 770);
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }, []);

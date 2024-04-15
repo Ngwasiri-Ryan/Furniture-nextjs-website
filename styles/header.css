@@ -12,6 +12,7 @@ header {
     background-color:transparent;
     padding: 1rem 2rem;  /* This will add some space around the text */
     transition: background-color 0.3s ease-in-out;
+    overflow-y: hidden;
 }
 
 header.scrolled {
