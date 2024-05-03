@@ -7,22 +7,16 @@
 }
 .about_container{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
     gap:5%;
+    padding-top: 2rem;
 }
-.blob{
-    height: 90%;
+.grid_1{
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex:1,
 }
-.about_img{
-    position: absolute;
-    top:120% ;
-    transform: translate(-130%,-20%);
-}
-.cards{
-    width: 8rem;
-    height: 4rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    transform: translateY(60%);
+.grid_2{
+    overflow: hidden;
 }
