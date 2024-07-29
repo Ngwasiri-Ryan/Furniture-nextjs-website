@@ -1,12 +1,11 @@
 "use client";
 
 import React,{useState, useEffect} from 'react';
-import Button from './Button';
-import Links from './Links';
-import Logo from './Logo';
 import Image from 'next/image';
 import styles from '@/styles/header.css'
-import Menu from './Menu'
+import MenuItems from './MenuItems'
+import HeaderIcons from './HeaderIcons'
+
 
 const Header = () => {
  const [isScrolled, setIsScrolled] = useState(false);
@@ -24,12 +23,9 @@ const Header = () => {
 
   return (
    <header className={isScrolled ? 'scrolled' : ''}>
-       {/***logo */}
-        <div>
-        <span className='logo-first'>G-</span><span  className='logo-second'>Builders</span>
-        </div>
-       {/***links */}
-        <Links/>
+   <MenuItems/>
+   <HeaderIcons/>
+      
    </header>
   );
 };
