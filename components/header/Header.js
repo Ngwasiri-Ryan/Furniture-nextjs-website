@@ -8,21 +8,8 @@ import HeaderIcons from './HeaderIcons'
 
 
 const Header = () => {
- const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-   <header className={isScrolled ? 'scrolled' : ''}>
+   <header>
    <MenuItems/>
    <HeaderIcons/>
       
